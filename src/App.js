@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+//import './App.css';
+import Home from './Home';
+import ContactUs from './ConstactUs';
+import AboutUs from './AboutUs';
+import Testimonials from './Testimonials';
+//import 'bootstrap/dist/css/bootstrap.min.css';
+import Movies from './Movies';
+import './css/common.css'
+import './css/contact.css'
+import './css/gallery.css'
+import './css/responsive.css'
+import './css/style.css'
+import './css/teams.css'
+import './css/testimonials.css'
+import './css/orderCall.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <Routes>
+    <Route path='/' element={<Home />}/>
+      <Route path='contactus' element={<ContactUs />}/>
+      <Route path='aboutus' element={<AboutUs />}/>
+      <Route path='testimonials' element={<Testimonials />}/>
+      <Route path='movies' element={<Movies />}/>
+    </Routes>   
+  </BrowserRouter>
   );
 }
 

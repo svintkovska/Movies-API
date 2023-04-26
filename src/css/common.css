@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: 500;
+}
+a {color: #0f1384;}
+a:hover {color: #151abc;}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.row-img {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+
+.row-img img{
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+
+[class*="column-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+    min-width: 1px;
+    max-width: 100%;
+}
+.column-2 {
+    flex: 0 0 50%;
+}
+.column-3 {
+    flex: 0 0 33.33%;
+}
+.mb {margin-bottom: 20px;}
+.text-center {text-align: center;}
+.heading {
+    font-size: 3rem;
+    line-height: 1.5;
+    text-align: center;
+    margin: 3.5rem 0;
+    color: #1a1a1a;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.img-border {
+     border: 4px solid #dbdbdb;
+    transition: .5s;
+}
+.tab:hover .img-border,.testimonial:hover .img-border,.img-border:hover {
+    border-color: #fff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.38);
+}
+.btn {
+	display: inline-block;
+	height: 38px;
+	padding: 0 30px;
+	color: #fff;
+	text-align: center;
+	line-height: 38px;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+    text-decoration: none;
+	background: #0f1384;
+	cursor: pointer;
+    transition: .5s;
+}
+.btn:hover {
+	background: #8488f8;
+	text-decoration: none;
+}
+
+
+.line{
+    margin: 20px 100px;
+    color: yellow;
+    height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #808650 inset;
+}
+
+.container-client {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: white;
+}
+
+.client-img{
+    width: 200px;
+    height: 200px;
+    margin-right: 35px;
+}
+.client-img:hover {
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.38);
+}
+.my-btn {
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    will-change: box-shadow, transform;
+    background: radial-gradient(100% 100% at 100% 0%, #dcff89 0%, #ecb261 100%);
+    box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);
+    padding: 0 32px;
+    border-radius: 6px;
+    color: #fff;
+    height: 48px;
+    font-size: 18px;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+    margin-top: 10px;
+}
+
+.my-btn:hover {
+    box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #9e6f16;
+    transform: translateY(-2px);
+}
+
+.my-btn :active {
+    box-shadow: inset 0px 3px 7px #9e6f16;
+    transform: translateY(2px);
+}

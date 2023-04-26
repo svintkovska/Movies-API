@@ -1,4 +1,54 @@
 тз
 
 сторінки:
-1. 
+        1. Home (не арі компонент, component Home)
+        2. About Us  (component About Us)
+        3. Tesnimonials (component Tesnimoials)
+        4. Movies (component Movies)
+        5. Contact Us (component Contact Us)
+ слой:
+ 1) папка Layout
+  a) Layout.js
+
+структура проекту:
+        1) components (всі компоненти крім сторінок)
+        2) elements (images, css штучки, всі дрібні деталі проекту, іконки)
+
+Папка components розбивається на підпапки:
+        1) header
+          - Header.js
+          - Logo.js
+          - Menu.js
+          - Search.js
+        2) footer
+          - Footer.js
+          - Logo.js
+          - Copyright.js
+          - Icons.js (на соц менежі)
+        3) content
+          - Main.js
+          - Sidebar.js
+
+ Обов'язково використати з функціоналу:
+        1. Пишемо все на функціональних компонентах
+        2. Використовувати хуки: 
+                a) useState
+                b) ref= {uRef}
+                c) useEffect
+        3. Routes, Link
+        4. onClick
+        5. onClickAct (передача даних від дочірнього батьківському)
+        
+
+Тема проекту:
+робота з API зі стороннього ресурсу
+стилі проекту довільні
+наповнення сторінок - мінімум по 3 блоки не рахуючи header і footer
+можна використовувати bootstrap
+
+Елементи:
+ а) слайдер
+ b) форма з валідацією
+ c) модальні вікна
+ d) інформаційні блоки (картинка, текст)
+ е) пошук (не обов'язково)

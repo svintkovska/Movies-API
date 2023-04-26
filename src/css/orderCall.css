@@ -1,0 +1,122 @@
+.order_call_div {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: mediumseagreen;
+    width: 600px;
+    height: 300px;
+    padding: 0 20px ;
+}
+
+.order_call_div p {
+    position: absolute;
+    right: 10px;
+    top: -20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.order_call_div h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 30px;
+}
+
+.order_call_div .input_btn {
+    display: flex;
+    flex-direction: row;
+}
+
+.order_call_div input {
+    width: 250px;
+    height: 40px;
+    padding-left: 10px;
+    margin: 0;
+}
+
+#wait_for_call_btn {
+    height: 40px;
+    width: 200px;
+    font-size: 18px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: red;
+}
+
+#wait_for_call_btn:hover {
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.order_call_div label {
+    color: gray;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.countdown_div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.countdown_div div {
+    width: 60px;
+    height: 60px;
+    background: red;
+    color: white;
+    margin-right: 3px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-call {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    animation: phone_swing 3s linear infinite;
+
+  }
+  
+  .btn-call img {
+    display: block;
+    width: 100px;
+    height: auto;
+    border-radius: 50%; 
+    box-shadow: none; 
+    transition: box-shadow 0.3s ease-out;
+  }
+  
+  .btn-call img:hover {
+    box-shadow: 0 0 30px 20px rgba(255, 255, 255, 0.8); 
+  }
+
+ 
+@keyframes phone_swing{
+    0% {
+        transform: rotate(-10deg);
+      }
+      50% {
+        transform: rotate(10deg);
+      }
+      100% {
+        transform: rotate(-10deg);
+      }
+  }
+  
+
+  .click-to-order{
+     position: fixed;
+  display: flex;
+  bottom: 2%;
+  right: 2%;
+  }
