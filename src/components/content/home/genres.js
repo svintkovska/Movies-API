@@ -1,48 +1,45 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 
 
 function Genres(){
     const [genres, setGenres] = useState(["Action", "Comedy", "Drama", "Horror", "Crime", "War"]);
     const [images, setImages] = useState([
         "https://www.syfy.com/sites/syfy/files/2019/05/john-wick-2017-image-3840x2400.jpg",
-        "data:image/jpeg;base64,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",
-        
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFSMtfjI52HK8wyfES8JWFnV8RZCIfNsxH_A&usqp=CAU",
+        "https://www.japantimes.co.jp/wp-content/uploads/2023/01/np_file_207015.jpeg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJc3H56QjPPq3RHMIUIjPo9trfY6ZAbIUgtA&usqp=CAU",
+        "https://www.chambersstudent.co.uk/media/1871/crime.jpeg?width=607px&height=404px",
+        "https://media.timeout.com/images/103492941/750/562/image.jpg"
     ]);
 
-    // useEffect(() => {
-    //     axios.get('https://api.themoviedb.org/3/genre/movie/list', {
-    //       params: {
-    //         api_key: 'd8d6c5280f348313c8a7874bb72ebbb4'
-    //       }
-    //     })
-    //     .then(response => {
-    //         setGenres(response.data.genres);
-    //         setImages([
-    //           'https://example.com/image1.jpg',
-    //           'https://example.com/image2.jpg',
-            
-    //         ]);
-    //       })
-    //     .catch(error => console.error(error));
-    //   }, []);
-
       console.log("----------------",genres)
-    return(
-        <>
-         <section id="portfolio">
-        <div className="container">
-          <h2 className="heading">Genres</h2>
-          <div className="row">
-            {genres.map((genre, index) => (
-              <div className="portfolio-item column-3" key={genre.id} data-descr={genre.name}>
-                <a target="_blank" href={images[index]}><img src={images[index]} className="img-fluid" alt={genre.name}/></a>
-              </div>
-            ))}
+    return (
+      <>
+        <section id="portfolio">
+          <div className="container">
+            <h2 className="heading">Genres</h2>
+            <div className="row">
+              {genres.map((genre, index) => (
+                <div
+                  className="portfolio-item column-3"
+                  key={index}
+                  data-descr={genre}
+                  width={"400px"}
+                  height={"400px"}
+                >
+                  <a target="_blank" href={images[index]}>
+                    <img
+                      src={images[index]}
+                      className="img-fluid"
+                      alt={genre}       
+                    />
+                  </a>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
-        </>
+        </section>
+      </>
     );
 
 }

@@ -19,7 +19,7 @@ function Footer(){
                 <a href="/">Drama</a>
                 <a href="/">Horror</a>
                 <a href="/">Crime</a>
-                <a href="/">Western</a>
+                <a href="/">War</a>
               </div>
               <div className="links">
                 <a href="/">Home</a>

@@ -14,6 +14,8 @@ import './css/style.css'
 import './css/teams.css'
 import './css/testimonials.css'
 import './css/orderCall.css'
+import './css/movies.css'
+import MoviesByGenre from './MoviesByGenre';
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
       <Route path='aboutus' element={<AboutUs />}/>
       <Route path='testimonials' element={<Testimonials />}/>
       <Route path='movies' element={<Movies />}/>
+      <Route path='movies/:genre' element={<MoviesByGenre />}/>
     </Routes>   
   </BrowserRouter>
   );
