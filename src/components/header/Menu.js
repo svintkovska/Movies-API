@@ -1,34 +1,34 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
 
 function Menu(){
 
     return (
       <>
         <li>
-          <a class="menu-item" href="/">
+          <Link classname="menu-item" to="/">
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a class="menu-item" href="/movies">
+          <Link className="menu-item" to="/movies">
             Movies
-          </a>
+          </Link>
         </li>
         <li>
-          <a class="menu-item" href="/aboutus">
+          <Link className="menu-item" to="/aboutus">
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a class="menu-item" href="contactus">
+          <Link className="menu-item" to="/contactus">
             Contact
-          </a>
+          </Link>
         </li>
         <li>
-          <a class="menu-item" href="/testimonials">
+          <Link className="menu-item" to="/testimonials">
             Testimonials
-          </a>
+          </Link>
         </li>
       </>
     );

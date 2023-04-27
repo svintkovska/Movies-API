@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
+import {Link} from "react-router-dom";
 
 
 function Genres(){
@@ -27,13 +28,13 @@ function Genres(){
                   width={"400px"}
                   height={"400px"}
                 >
-                  <a target="_blank" href={images[index]}>
-                    <img
+                  <Link to={`/movies/${genre}`}>
+                  <img
                       src={images[index]}
                       className="img-fluid"
                       alt={genre}       
                     />
-                  </a>
+                  </Link>                 
                 </div>
               ))}
             </div>
