@@ -16,6 +16,7 @@ import './css/testimonials.css'
 import './css/orderCall.css'
 import './css/movies.css'
 import MoviesByGenre from './MoviesByGenre';
+import MovieResults from './MovieResults';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Route path='aboutus' element={<AboutUs />}/>
       <Route path='testimonials' element={<Testimonials />}/>
       <Route path='movies' element={<Movies />}/>
+      <Route path='movies/search/:query' element={<MovieResults />}/>
       <Route path='movies/:genre' element={<MoviesByGenre />}/>
     </Routes>   
   </BrowserRouter>

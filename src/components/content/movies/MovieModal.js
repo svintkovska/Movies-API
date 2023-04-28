@@ -23,7 +23,7 @@ function MovieModal({ selectedFilm, handleCloseModal }) {
     <>
       <div className="movie-card">
         <button className="close-btn" onClick={handleCloseModal}>
-          Close
+          X
         </button>
         <div className="container-modal">
           <a href="#">
