@@ -5,16 +5,16 @@ function AboutInfo(){
     return (
       <>
         <section id="about">
-          <div class="container">
-            <h2 class="heading">About Us</h2>
+          <div className="container">
+            <h2 className="heading">About Us</h2>
             <p>
               Movies, Shows, Sports & Gaming. We only buy media for the
               entertainment industry. From the biggest blockbusters to award
               winning shows, major sporting events and best selling console
               games.
             </p>
-            <div class="row">
-              <div class="column-2">
+            <div className="row">
+              <div className="column-2">
                 <h3>Our Process</h3>
                 <p>
                   We only show 100% legal offers on many different platforms for
@@ -41,7 +41,7 @@ function AboutInfo(){
                   Our creative team lives and breathes entertainment.
                 </p>
               </div>
-              <div class="column-2">
+              <div className="column-2">
                 <img
                   src="https://play-lh.googleusercontent.com/Riuz226TXAawu8ZXlL7wnsjtMHkTMTDh_RSRiozAdoKe2TyGG4cLp3rPB0CxQFEUzFc"
                   class="img-fluid img-border"

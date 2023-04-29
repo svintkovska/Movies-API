@@ -6,14 +6,14 @@ function WhatWeDo(){
     return (
       <>
         <section id="about">
-          <div class="container">
-            <h2 class="heading">What We Do</h2>
-            <div class="row">
-              <div class="column-2">
+          <div className="container">
+            <h2 className="heading">What We Do</h2>
+            <div className="row">
+              <div className="column-2">
                 <h3>For our users</h3>
                 <h3>Apps for movie & TV show fans</h3>
                 <img
-                  src="https://www.justwatch.com/static/img/about-us/for-users-2.jpg"
+                  src="https://www.justwatch.com/static/img/about-us/for-users-2.jpg" alt="img"
                   width={"500px"}
                 />
                 <p>
@@ -27,11 +27,11 @@ function WhatWeDo(){
                 </p>
                 <Button text='Learn more about our apps' myhref='https://www.justwatch.com/us/apps'/>
               </div>
-              <div class="column-2">
+              <div className="column-2">
                 <h3>For our clients</h3>
                 <h3>Next generation movie marketing</h3>
                 <img
-                  src="https://www.justwatch.com/static/img/about-us/for-clients-jw-media-2.jpg"
+                  src="https://www.justwatch.com/static/img/about-us/for-clients-jw-media-2.jpg" alt="img"
                   width={"500px"}
                 />
                 <p>
@@ -43,7 +43,6 @@ function WhatWeDo(){
                   else can, media buying based on audience content tastes.
                 </p>
                 <Button text='Learn more about our marketing campaings' myhref='https://media.justwatch.com/'/>
-
               </div>
             </div>
           </div>

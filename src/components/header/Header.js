@@ -7,8 +7,8 @@ function Header(){
 
     return (
       <>
-        <div class="main-nav">
-          <div class="container">      
+        <div className="main-nav">
+          <div className="container">      
             <nav>
               <ul>
                 <Logo />

@@ -18,9 +18,9 @@ function Search(){
   return (
     <>
       <li>
-        <div class="search-container">
+        <div className="search-container">
           <form onSubmit={handleSubmit}>
-            <div class="search-wrapper">
+            <div className="search-wrapper">
               <input type="text" required placeholder="Search" onChange={handlerInput}/>
               <button type="submit" style={{background: "none", border: "none"}}>
                 <img

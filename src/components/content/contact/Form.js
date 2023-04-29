@@ -36,38 +36,38 @@ function Form(){
         <>
         
         <section id="contacts">
-              <div class="container">
-                <h2 class="heading">Send Us Email</h2>
+              <div className="container">
+                <h2 className="heading">Send Us Email</h2>
                 <form  onSubmit={handlerSubmit}>
                 {successMessage && <SuccessMessage message="Successfully sent" />}
                 {errorMessage && <ErrorMessage message="Please fill in all fields" />}
-                  <div class="row">
-                    <div class="column-2">
+                  <div className="row">
+                    <div className="column-2">
                       <p>
-                        <label for="username">Name</label>
+                        <label htmlFor="username">Name</label>
                         <input type="text" id="username" name="username" ref={nRef}/>
                       </p>
                       <p>
-                        <label for="useremail">Email</label>
+                        <label htmlFor="useremail">Email</label>
                         <input type="email" id="useremail" name="useremail" ref={eRef}/>
                       </p>
                       <p>
-                        <label for="subject">Subject</label>
+                        <label htmlFor="subject">Subject</label>
                         <input type="text" id="useremail" name="subject" ref={sRef}/>
                       </p>
                     </div>
-                    <div class="column-2">
+                    <div className="column-2">
                       <p>
-                        <label for="usermessage">Message</label>
+                        <label htmlFor="usermessage">Message</label>
                         <textarea
-                          class="u-full-width"
+                          className="u-full-width"
                           id="usermessage"
                           name="usermessage"
                           ref={mRef}
                         ></textarea>
                       </p>
                       <p>
-                        <input class="btn" type="submit" value="Submit" />
+                        <input className="btn" type="submit" value="Submit" />
                       </p>
                     </div>
                   </div>

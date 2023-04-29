@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 
 function ModalCall({ handleCloseModal }) {
-    const [seconds, setSeconds] = useState(30);
+  const [seconds, setSeconds] = useState(30);
   const [isCountingDown, setIsCountingDown] = useState(false);
   const tRef = useRef("");
   const phoneRegex = /^(\+38)?(0\d{9})$/  ;

@@ -51,17 +51,24 @@ function MoviesByGenre(){
     return (
       <>
         <Layout>
-          <div style={{ height: "10px"}}></div>
-        <h2 className="heading" >{genre} Movies</h2>
-        <div className="container-movies-by-genre">
-          {films.slice(0, 12).map((film, id) => (
-            <div className="column is-one-quarter" key={id}>
-              <img src={`https://image.tmdb.org/t/p/w400/${film.poster_path}`} onClick={() => showModalHandler(film)}/>
-            </div>
-          ))}
-        </div>
-        {showModal && <MovieModal selectedFilm={selectedFilm} handleCloseModal={handleCloseModal}/>}
-
+          <div style={{ height: "10px" }}></div>
+          <h2 className="heading">{genre} Movies</h2>
+          <div className="container-movies-by-genre">
+            {films.slice(0, 12).map((film, id) => (
+              <div className="column is-one-quarter" key={id}>
+                <img
+                  src={`https://image.tmdb.org/t/p/w400/${film.poster_path}`}
+                  onClick={() => showModalHandler(film)}
+                />
+              </div>
+            ))}
+          </div>
+          {showModal && (
+            <MovieModal
+              selectedFilm={selectedFilm}
+              handleCloseModal={handleCloseModal}
+            />
+          )}
         </Layout>
       </>
     );

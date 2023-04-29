@@ -35,9 +35,9 @@ function TopRated() {
   return (
     <>
       <h2 className="heading">Top Rated</h2>
-      <div class="container-topfilms">
+      <div className="container-topfilms">
         {films.slice(0, 4).map((film, id) => (
-          <div class="column is-one-quarter" key={id}>
+          <div className="column is-one-quarter" key={id}>
             <img
               src={`https://image.tmdb.org/t/p/w400/${film.poster_path}`}
               onClick={() => showModalHandler(film)}

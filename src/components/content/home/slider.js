@@ -5,18 +5,18 @@ function Slider(){
 
     return (
       <>
-        <div class="slider">
+        <div className="slider">
           <input type="radio" name="toggle" id="btn-1" checked />
           <input type="radio" name="toggle" id="btn-2" />
           <input type="radio" name="toggle" id="btn-3" />
 
-          <div class="slider-controls">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>
+          <div className="slider-controls">
+            <label htmlFor="btn-1"></label>
+            <label htmlFor="btn-2"></label>
+            <label htmlFor="btn-3"></label>
           </div>
 
-          <ul class="slides">
+          <ul className="slides">
             <SlideItem title="Avatar 2" text="Everything we know about the upcoming sci-fi epic"
             imgUrl="https://www.nme.com/wp-content/uploads/2017/02/2017_avatar_Fox_030217.jpg"
             href="https://www.nme.com/blogs/the-movies-blog/avatar-2-release-date-plot-trailer-1966393"/>

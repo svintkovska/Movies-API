@@ -21,25 +21,25 @@ function Trending() {
     <>
       <h2 className="heading">Trending</h2>
       {films.slice(0, 4).map((film, id) => (
-        <div class="movie_card" id="bright" key={id}>
-          <div class="info_section">
-            <div class="movie_header">
+        <div className="movie_card" id="bright" key={id}>
+          <div className="info_section">
+            <div className="movie_header">
               <img
-                class="locandina"
+                className="locandina"
                 src={`https://image.tmdb.org/t/p/w500/${film.poster_path}`}
               />
               <h1>{film.original_title}</h1>
             </div>
-            <div class="movie_desc">
-              <p class="movie-decs-text">{film.overview}</p>
+            <div className="movie_desc">
+              <p className="movie-decs-text">{film.overview}</p>
             </div>
             <div className="row-min-year">
-              <h4 class="minutes">{film.vote_average}</h4>
-              <h4 class="minutes">{film.release_date}</h4>
+              <h4 className="minutes">{film.vote_average}</h4>
+              <h4 className="minutes">{film.release_date}</h4>
             </div>
           </div>
           <div
-            class="blur_back bright_back"
+            className="blur_back bright_back"
             style={{
               backgroundImage: `url(https://image.tmdb.org/t/p/w500/${film.poster_path})`,
             }}

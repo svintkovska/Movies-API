@@ -39,31 +39,34 @@ function MovieResults() {
 
   return (
     <>
-    <Layout>
-  <div style={{ height: "10px" }}></div>
-  {films.length > 0 ? (
-    <div className="container-movies-by-genre">
-      {films.slice(0, 12).map((film) => (
-        <div className="column is-one-quarter" key={film.id}>
-          <img
-            src={`https://image.tmdb.org/t/p/w400/${film.poster_path}`}
-            onClick={() => showModalHandler(film)}
+      <Layout>
+        <div style={{ height: "10px" }}></div>
+        {films.length > 0 ? (
+          <div className="container-movies-by-genre">
+            {films.slice(0, 12).map((film) => (
+              <div className="column is-one-quarter" key={film.id}>
+                <img
+                  src={`https://image.tmdb.org/t/p/w400/${film.poster_path}`}
+                  onClick={() => showModalHandler(film)}
+                />
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div
+            className="heading"
+            style={{ marginTop: "65px", height: "50vh" }}
+          >
+            Not found
+          </div>
+        )}
+        {showModal && (
+          <MovieModal
+            selectedFilm={selectedFilm}
+            handleCloseModal={handleCloseModal}
           />
-        </div>
-      ))}
-    </div>
-  ) : (
-    <div className="heading" style={{marginTop: "65px", height: "50vh"}}>Not found</div>
-  )}
-  {showModal && (
-    <MovieModal
-      selectedFilm={selectedFilm}
-      handleCloseModal={handleCloseModal}
-    />
-  )}
-</Layout>
-
-   
+        )}
+      </Layout>
     </>
   );
 }

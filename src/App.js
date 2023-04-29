@@ -1,10 +1,8 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-//import './App.css';
 import Home from './Home';
 import ContactUs from './ConstactUs';
 import AboutUs from './AboutUs';
 import Testimonials from './Testimonials';
-//import 'bootstrap/dist/css/bootstrap.min.css';
 import Movies from './Movies';
 import './css/common.css'
 import './css/contact.css'

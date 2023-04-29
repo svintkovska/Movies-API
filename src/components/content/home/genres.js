@@ -13,7 +13,6 @@ function Genres(){
         "https://media.timeout.com/images/103492941/750/562/image.jpg"
     ]);
 
-      console.log("----------------",genres)
     return (
       <>
         <section id="portfolio">

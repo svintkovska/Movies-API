@@ -9,8 +9,8 @@ function Footer(){
     return (
       <>
         <footer id="footer">
-          <div class="container">
-            <div class="row justify-content-between">
+          <div className="container">
+            <div className="row justify-content-between">
               <div style={{ marginTop: "50px" }}>
                 <Logo />
               </div>

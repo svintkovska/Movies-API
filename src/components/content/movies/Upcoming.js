@@ -35,11 +35,11 @@ function Upcoming() {
   return (
     <>
       <h2 className="heading">Upcoming</h2>
-      <div class="accordion">
+      <div className="accordion">
         <ul>
           {films.slice(0, 6).map((film, id) => (
             <li key={id}>
-              <div class="image_title" onClick={() => showModalHandler(film)}>
+              <div className="image_title" onClick={() => showModalHandler(film)}>
                 <a>{film.original_title}</a>
                 <a href="#">{film.release_date}</a>
               </div>

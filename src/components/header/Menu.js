@@ -6,7 +6,7 @@ function Menu(){
     return (
       <>
         <li>
-          <Link classname="menu-item" to="/">
+          <Link className="menu-item" to="/">
             Home
           </Link>
         </li>

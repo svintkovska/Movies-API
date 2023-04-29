@@ -4,17 +4,17 @@ function Reviews() {
   return (
     <>
       <section id="testimonials">
-        <div class="container">
-          <h2 class="heading">Testimonials</h2>
-          <div class="row">
-            <div class="column-2 mb">
-              <div class="testimonial">
+        <div className="container">
+          <h2 className="heading">Testimonials</h2>
+          <div className="row">
+            <div className="column-2 mb">
+              <div className="testimonial">
                 <img
                   src="https://source.unsplash.com/EGVccebWodM/150x150"
                   alt="Author 1"
-                  class="testimonial-author img-border"
+                  className="testimonial-author img-border"
                 />
-                <div class="testimonial-body">
+                <div className="testimonial-body">
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Nobis doloremque, non quas perferendis.
@@ -28,15 +28,14 @@ function Reviews() {
                 </div>
               </div>
             </div>
-            <div class="column-2 mb">
-              <div class="testimonial">
+            <div className="column-2 mb">
+              <div className="testimonial">
                 <img
                   src="https://source.unsplash.com/iFgRcqHznqg/150x150"
                   alt="Author 2"
-                  class="testimonial-author img-border"
+                  className="testimonial-author img-border"
                 />
-
-                <div class="testimonial-body">
+                <div className="testimonial-body">
                   <p>
                     Deserunt laborum, vero similique hic consequatur quod in
                     maiores minus, quaerat sapiente facilis.
